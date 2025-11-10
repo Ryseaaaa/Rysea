@@ -1,0 +1,50 @@
+Stap 1:
+Wat vind je leuk om te doen?
+  Programmeren, nieuwe dingen proberen
+
+Waar ben je goed in?
+  Creatief denken, zowel in kunst als programmeren
+
+Wat zeggen anderen vaak over jou?
+  Dat ik slim, sympathiek, en meedenkend ben.
+
+Wat vind je belangrijk in werk of opleiding?
+  Een goeie sfeer en een team waarin ik mijzelf kan zijn. 
+
+Wat wil je later bereiken of leren?
+  Ik wil graag leren team te werken en samen met collega's iets te bereiken.  
+
+Kies daarna drie woorden die jou goed beschrijven:
+
+Ik ben: nieuwschierig, creatief, sympathiek.
+
+Stap 2
+1. Inleiding – Wie ben ik?
+  Mijn naam is Mika van de Kuit en ik ben 20 jaar. Ik volg de opleiding software developer MBO niveau 4 op ROC van Flevoland, MBO college Almere Buiten.
+  Ik heb deze opleiding gekozen omdat ik eigenlijk niet wist wat ik wilde doen, en ik al enige ervaring had met programmeren en game development (Scratch, GameMaker 2). De opleiding bevalt mij goed 
+
+2. Kern – Wat kan ik goed en wat vind ik belangrijk?
+  Ik ben iemand die graag nieuwe dingen leert en heel nieuwschierig is.
+  Mensen zeggen dat ik intelligent en sympathiek ben.
+  In mijn werk vind ik het belangrijk om goed met mijn collega's overweg te kunnen, en in een team te kunnen werken.
+  Mijn sterke punten zijn mijn creativiteit, nieuwschierigheid, en het vermogen om nieuwe dingen te leren.
+
+3. Afsluiting – Wat wil ik bereiken of leren?
+In de toekomst wil ik graag onafhankelijk games kunnen maken.
+Ik hoop tijdens mijn stage te leren hoe ik goed met Unity of andere game engines kan werken, en hoop ik veel verschillende aspecten van gamedevelopment te leren beheersen. 
+Mijn doel is om mij te richten op het gehele process van het ontwikkelen van games.
+
+
+Text
+
+Mijn naam is Mika van de Kuit en ik ben 20 jaar. Ik volg de opleiding software developer MBO niveau 4 op ROC van Flevoland, MBO college Almere Buiten.
+Ik heb deze opleiding gekozen omdat ik eigenlijk niet wist wat ik wilde doen, en ik al enige ervaring had met programmeren en game development (Scratch, GameMaker 2). De opleiding bevalt mij goed 
+
+Ik ben iemand die graag nieuwe dingen leert en heel nieuwschierig is.
+Mensen zeggen dat ik intelligent en sympathiek ben.
+In mijn werk vind ik het belangrijk om goed met mijn collega's overweg te kunnen, en in een team te kunnen werken.
+Mijn sterke punten zijn mijn creativiteit, nieuwschierigheid, en het vermogen om nieuwe dingen te leren.
+
+In de toekomst wil ik graag onafhankelijk games kunnen maken.
+Ik hoop tijdens mijn stage te leren hoe ik goed met Unity of andere game engines kan werken, en hoop ik veel verschillende aspecten van gamedevelopment te leren beheersen. 
+Mijn doel is om mij te richten op het gehele process van het ontwikkelen van games.
