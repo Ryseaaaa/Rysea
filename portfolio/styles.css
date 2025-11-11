@@ -129,31 +129,27 @@ body::-webkit-scrollbar {
   color: rgb(56, 48, 29);
 } */
 
-.textblock {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  background-color: rgba(239, 224, 197, 0.75);
+.unityCardgame {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(239, 224, 197, 0.694);
   backdrop-filter: saturate(0.2) brightness(3) contrast(0.7);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.342);
   padding-left: 64px;
 }
-.textblock * {
+.unityCardgame * {
   color: black;
 }
-
-.textblock h1 {
+.unityCardgame h1 {
   width: fit-content;
   padding-bottom: 16px;
   margin-bottom: 16px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.226);
 }
 
-.unityCardgame {
-  display: flex;
-  flex-direction: row;
-}
-
 .unityCardgame div {
+  padding-top: 32px;
+  padding-bottom: 32px;
   width: 100%;
 }
 
@@ -180,18 +176,5 @@ body::-webkit-scrollbar {
   height: 192px;
   top: 60px;
   right: 210px;
-}
-
-@keyframes hover {
-  from {
-    transform: translateY(-32px);
-  }
-  to {
-    transform: translateY(0px);
-  }
-}
-.tv img {
-  animation: hover 4s infinite ease-in-out alternate;
-  animation-iteration-count: infinite;
 }
 /* TV */
