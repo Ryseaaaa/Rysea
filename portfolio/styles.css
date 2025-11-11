@@ -132,10 +132,11 @@ body::-webkit-scrollbar {
 .textblock {
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: rgba(239, 224, 197, 0.75);
-  backdrop-filter: saturate(0.2) brightness(3) contrast(0.7);
+  background-color: rgba(213, 219, 232, 0.66);
+  backdrop-filter: saturate(0.5) brightness(2);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.342);
   padding-left: 64px;
+  padding-right: 64px;
 }
 .textblock * {
   color: black;
@@ -195,3 +196,42 @@ body::-webkit-scrollbar {
   animation-iteration-count: infinite;
 }
 /* TV */
+
+/* Portfolio */
+
+.portfolioFlex {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.portfolioFlex div h1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolioGrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 40px;
+  column-gap: 40px;
+}
+.portfolioCard {
+  margin: auto;
+  background-color: rgba(33, 34, 37, 0.792);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.525);
+  border: 2px solid black;
+  border-radius: 8px;
+  width: 1fr;
+  padding-top: 16px;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.portfolioCard :first-child {
+  margin-bottom: auto;
+}
+.portfolioCard img {
+  width: 100%;
+  border-top: 2px solid black;
+}
