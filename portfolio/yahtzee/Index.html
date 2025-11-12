@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div>
+        <h1 style="text-align: center">
+          <a href="../">Terug naar Portfolio</a>
+        </h1>
+      </div>
+      <div class="header">
+        <div class="names header--item">
+          <p>P1 Name:<input id="name1" name="name1" /></p>
+
+          <p>P2 Name:<input id="name2" name="name2" /></p>
+        </div>
+        <div class="turn header--item">
+          <p class="header--text">Turn</p>
+          <p class="header--text" id="turn">Player 1</p>
+          <!--de speler die aan de beurt is-->
+        </div>
+        <div class="rolls header--item">
+          <p class="header--text">Rolls left</p>
+          <p class="header--text" id="rolls">3</p>
+          <!--het aantal keer dat er nog gegooit kan worden-->
+        </div>
+        <button class="rollButton header--item" onclick="roll()">ROLL!</button>
+        <!--de roll button die on click d functie roll uitvoert in javascript-->
+        <button class="rollButton header--item" onclick="resetGame()">
+          Restart
+        </button>
+        <div class="header--item">
+          <p class="header--text">Winner:</p>
+          <p class="header--text" id="winner">______</p>
+        </div>
+        <div class="highscore header--item">
+          <p class="header--text">Highscore</p>
+          <p class="header--text" id="highscore">0</p>
+          <!--highscore-->
+        </div>
+      </div>
+      <div class="main">
+        <div class="p1 player main--item">
+          <div class="name player--item" id="displayName1">Naam</div>
+          <div class="top player--item">
+            <div class="singles top--item">
+              <p>Aces</p>
+              <p>Twos</p>
+              <p>Threes</p>
+              <p>Fours</p>
+              <p>Fives</p>
+              <p>Sixes</p>
+              <p>Subtotal</p>
+              <p>Bonus</p>
+              <p>Total</p>
+            </div>
+            <div class="score--indicator top--item">
+              <!--de blauwe vakjes, hier kies je welke punten je wilt gebruiken-->
+              <p class="temp--score" onclick="lockScore(0)" id="aces--p1">0</p>
+              <p class="temp--score" onclick="lockScore(1)" id="twos--p1">0</p>
+              <p class="temp--score" onclick="lockScore(2)" id="threes--p1">
+                0
+              </p>
+              <p class="temp--score" onclick="lockScore(3)" id="fours--p1">0</p>
+              <p class="temp--score" onclick="lockScore(4)" id="fives--p1">0</p>
+              <p class="temp--score" onclick="lockScore(5)" id="sixes--p1">0</p>
+            </div>
+            <div class="score--locked top--item">
+              <!--de beige vakjes, hier zie je hoeveel punten er gewonnen zijn in die rij-->
+              <p class="locked--score" id="aces--p1--locked">0</p>
+              <p class="locked--score" id="twos--p1--locked">0</p>
+              <p class="locked--score" id="threes--p1--locked">0</p>
+              <p class="locked--score" id="fours--p1--locked">0</p>
+              <p class="locked--score" id="fives--p1--locked">0</p>
+              <p class="locked--score" id="sixes--p1--locked">0</p>
+
+              <p class="locked--score" id="subtotal--p1--locked">0</p>
+              <p class="locked--score" id="bonus--p1--locked">0</p>
+              <p class="locked--score" id="total--p1--locked">0</p>
+            </div>
+          </div>
+          <div class="bottom player--item">
+            <div class="combinations bottom--item">
+              <p>Three of a kind</p>
+              <p>Four of a kind</p>
+              <p>Full house</p>
+              <p>Small straight</p>
+              <p>Large straight</p>
+              <p>Yahtzee</p>
+              <p>Chance</p>
+              <p>Total</p>
+            </div>
+            <div class="score--indicator bottom--item">
+              <p class="temp--score" onclick="lockScore(6)" id="tkind--p1">0</p>
+              <p class="temp--score" onclick="lockScore(7)" id="fkind--p1">0</p>
+              <p class="temp--score" onclick="lockScore(8)" id="fouse--p1">0</p>
+              <p class="temp--score" onclick="lockScore(9)" id="small--p1">0</p>
+              <p class="temp--score" onclick="lockScore(10)" id="large--p1">
+                0
+              </p>
+              <p class="temp--score" onclick="lockScore(11)" id="yahtzee--p1">
+                0
+              </p>
+              <p class="temp--score" onclick="lockScore(12)" id="chance--p1">
+                0
+              </p>
+            </div>
+            <div class="score--locked bottom--item">
+              <p class="locked--score" id="tkind--p1--locked">0</p>
+              <p class="locked--score" id="fkind--p1--locked">0</p>
+              <p class="locked--score" id="fouse--p1--locked">0</p>
+              <p class="locked--score" id="small--p1--locked">0</p>
+              <p class="locked--score" id="large--p1--locked">0</p>
+              <p class="locked--score" id="yahtzee--p1--locked">0</p>
+
+              <p class="locked--score" id="chance--p1--locked">0</p>
+              <p class="locked--score" id="total--p1--locked">0</p>
+            </div>
+          </div>
+          <div class="totals player--item">
+            <div class="all--totals totals--item">
+              <p>Top section total</p>
+              <p>Bottom section total</p>
+              <p>Grand total</p>
+            </div>
+            <div class="score--indicator totals--item"></div>
+            <!-- hier schrijf je de totalen op -->
+            <div class="score--locked totals--item">
+              <p class="locked--score" id="top--p1--total">0</p>
+              <p class="locked--score" id="bottom--p1--locked">0</p>
+              <p class="locked--score" id="grand--p1--locked">0</p>
+            </div>
+          </div>
+        </div>
+        <!--Alle dobbelstenen appart-->
+        <div class="table main--item">
+          <img class="dice" id="die1" src="Images/Dice-1.png" />
+          <img class="dice" id="die2" src="Images/Dice-1.png" />
+          <img class="dice" id="die3" src="Images/Dice-1.png" />
+          <img class="dice" id="die4" src="Images/Dice-1.png" />
+          <img class="dice" id="die5" src="Images/Dice-1.png" />
+        </div>
+        <!-- alles in p2 is hetzelfde als p1, als je niet de 2 player versie wil maken haal deze div dan weg en verander de header-->
+        <div class="p2 player main--item">
+          <div class="name player--item" id="displayName2">Naam</div>
+          <div class="top player--item">
+            <div class="singles top--item">
+              <p>Aces</p>
+              <p>Twos</p>
+              <p>Threes</p>
+              <p>Fours</p>
+              <p>Fives</p>
+              <p>Sixes</p>
+              <p>Subtotal</p>
+              <p>Bonus</p>
+              <p>Total</p>
+            </div>
+            <div class="score--indicator top--item">
+              <p class="temp--score" onclick="lockScore(13)" id="aces--p2">0</p>
+              <p class="temp--score" onclick="lockScore(14)" id="twos--p2">0</p>
+              <p class="temp--score" onclick="lockScore(15)" id="threes--p2">
+                0
+              </p>
+              <p class="temp--score" onclick="lockScore(16)" id="fours--p2">
+                0
+              </p>
+              <p class="temp--score" onclick="lockScore(17)" id="fives--p2">
+                0
+              </p>
+              <p class="temp--score" onclick="lockScore(18)" id="sixes--p2">
+                0
+              </p>
+            </div>
+            <div class="score--locked top--item">
+              <p class="locked--score" id="aces--p2--locked">0</p>
+              <p class="locked--score" id="twos--p2--locked">0</p>
+              <p class="locked--score" id="threes--p2--locked">0</p>
+              <p class="locked--score" id="fours--p2--locked">0</p>
+              <p class="locked--score" id="fives--p2--locked">0</p>
+              <p class="locked--score" id="sixes--p2--locked">0</p>
+
+              <p class="locked--score" id="subtotal--p2--locked">0</p>
+              <p class="locked--score" id="bonus--p2--locked">0</p>
+              <p class="locked--score" id="total--p2--locked">0</p>
+            </div>
+          </div>
+          <div class="bottom player--item">
+            <div class="combinations bottom--item">
+              <p>Three of a kind</p>
+              <p>Four of a kind</p>
+              <p>Full house</p>
+              <p>Small straight</p>
+              <p>Large straight</p>
+              <p>Yahtzee</p>
+              <p>Chance</p>
+              <p>Total</p>
+            </div>
+            <div class="score--indicator bottom--item">
+              <p class="temp--score" onclick="lockScore(19)" id="tkind--p2">
+                0
+              </p>
+              <p class="temp--score" onclick="lockScore(20)" id="fkind--p2">
+                0
+              </p>
+              <p class="temp--score" onclick="lockScore(21)" id="fouse--p2">
+                0
+              </p>
+              <p class="temp--score" onclick="lockScore(22)" id="small--p2">
+                0
+              </p>
+              <p class="temp--score" onclick="lockScore(23)" id="large--p2">
+                0
+              </p>
+              <p class="temp--score" onclick="lockScore(24)" id="yahtzee--p2">
+                0
+              </p>
+              <p class="temp--score" onclick="lockScore(25)" id="chance--p2">
+                0
+              </p>
+            </div>
+            <div class="score--locked bottom--item">
+              <p class="locked--score" id="tkind--p2--locked">0</p>
+              <p class="locked--score" id="fkind--p2--locked">0</p>
+              <p class="locked--score" id="fouse--p2--locked">0</p>
+              <p class="locked--score" id="small--p2--locked">0</p>
+              <p class="locked--score" id="large--p2--locked">0</p>
+              <p class="locked--score" id="yahtzee--p2--locked">0</p>
+
+              <p class="locked--score" id="chance--p2--locked">0</p>
+              <p class="locked--score" id="total--p2--locked">0</p>
+            </div>
+          </div>
+          <div class="totals player--item">
+            <div class="all--totals totals--item">
+              <p>Top section total</p>
+              <p>Bottom section total</p>
+              <p>Grand total</p>
+            </div>
+            <div class="score--indicator totals--item"></div>
+            <div class="score--locked totals--item">
+              <p class="locked--score" id="top--p2--total">0</p>
+              <p class="locked--score" id="bottom--p2--locked">0</p>
+              <p class="locked--score" id="grand--p2--locked">0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center">
+        <h1>Gemaakt door: Mika van de Kuit</h1>
+      </div>
+    </div>
+
+    <script src="Index.js"></script>
+  </body>
+</html>
