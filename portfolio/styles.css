@@ -137,6 +137,8 @@ body::-webkit-scrollbar {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.342);
   padding-left: 64px;
   padding-right: 64px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .textblock * {
   color: black;
@@ -144,6 +146,8 @@ body::-webkit-scrollbar {
 
 .textblock h1 {
   width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 16px;
   margin-bottom: 16px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.226);
@@ -197,8 +201,47 @@ body::-webkit-scrollbar {
 }
 /* TV */
 
-/* Portfolio */
+/* About Me */
 
+.aboutMeFlex {
+  display: flex;
+  flex-direction: row;
+}
+.aboutMeFlex2 {
+  display: flex;
+  flex-direction: row;
+}
+.aboutMeFlex2 h1 {
+  width: calc(100% - 100px);
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 48px;
+}
+.aboutMeFlex3 {
+  font-size: 20px;
+}
+
+.aboutMeFlex3 {
+  height: auto;
+}
+
+.aboutMeFlex3 > div:first-child {
+  width: 50%;
+  float: left;
+}
+.aboutMeFlex3 > div:last-child {
+  float: right;
+  margin-right: 100px;
+}
+
+#photo {
+  width: 300px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+/* About Me */
+
+/* Portfolio */
 .portfolioFlex {
   display: flex;
   flex-direction: column;
@@ -246,4 +289,35 @@ body::-webkit-scrollbar {
 .portfolioCard img {
   width: 100%;
   border-top: 2px solid black;
+}
+/* Portfolio Card */
+
+/* Over Mij 2 */
+.aboutMeLong {
+  padding-left: 300px;
+  padding-right: 300px;
+}
+/*  */
+.contact {
+  padding-left: 200px;
+  padding-right: 200px;
+  display: flex;
+  flex-direction: row;
+}
+.contact > * {
+  margin: auto;
+  background-color: rgba(33, 34, 37, 0.792);
+  color: rgb(206, 219, 234);
+  text-align: center;
+  width: 200px;
+  height: 100px;
+  display: block;
+  line-height: 100px;
+  border: 2px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+
+  text-decoration: unset;
+  font-family: Roboto;
+  font-size: 20px;
 }
