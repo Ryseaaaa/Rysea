@@ -108,7 +108,7 @@ body::-webkit-scrollbar {
     background-position: bottom 0px center;
   }
   to {
-    background-position: bottom -512px center;
+    background-position: bottom -1536px center;
   }
 }
 /* PARALLAX */
