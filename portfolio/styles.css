@@ -1,6 +1,10 @@
 * {
   color: white;
   margin: 0;
+
+  font-family: "JetBrains Mono", Monospace;
+}
+h1 {
   font-family: Roboto;
 }
 :root {
@@ -14,6 +18,7 @@ p {
 /* HIDE SCROLLBARS */
 html {
   scrollbar-width: none;
+  scroll-behavior: smooth;
 } /* Firefox */
 body {
   -ms-overflow-style: none;
@@ -132,8 +137,8 @@ body::-webkit-scrollbar {
 .textblock {
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: rgba(213, 219, 232, 0.66);
-  backdrop-filter: saturate(0.5) brightness(2);
+  background-color: rgba(204, 210, 214, 0.664);
+  backdrop-filter: brightness(4);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.342);
   padding-left: 64px;
   padding-right: 64px;
@@ -259,13 +264,14 @@ body::-webkit-scrollbar {
   column-gap: 80px;
   margin-top: 30px;
 }
+
 .portfolioCard {
   margin: auto;
   background-color: rgba(33, 34, 37, 0.792);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.525);
   border: 2px solid black;
   border-radius: 8px;
-  width: 1fr;
+  width: fr;
   padding-top: 16px;
   height: 100%;
 
@@ -285,10 +291,15 @@ body::-webkit-scrollbar {
 .portfolioCard :first-child {
   margin-bottom: auto;
   padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
 .portfolioCard img {
   width: 100%;
   border-top: 2px solid black;
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }
 /* Portfolio Card */
 
@@ -296,8 +307,11 @@ body::-webkit-scrollbar {
 .aboutMeLong {
   padding-left: 300px;
   padding-right: 300px;
+  text-align: center;
 }
 /*  */
+
+/* Contact */
 .contact {
   padding-left: 200px;
   padding-right: 200px;
@@ -309,10 +323,11 @@ body::-webkit-scrollbar {
   background-color: rgba(33, 34, 37, 0.792);
   color: rgb(206, 219, 234);
   text-align: center;
-  width: 200px;
-  height: 100px;
+  width: 150px;
+  height: 75px;
   display: block;
-  line-height: 100px;
+  line-height: 75px;
+  margin-top: 40px;
   border: 2px solid black;
   border-radius: 8px;
   cursor: pointer;
@@ -320,4 +335,11 @@ body::-webkit-scrollbar {
   text-decoration: unset;
   font-family: Roboto;
   font-size: 20px;
+}
+
+.contactButton {
+  transition: 0.2s ease-in-out;
+}
+.contactButton:hover {
+  transform: scale(1.03);
 }

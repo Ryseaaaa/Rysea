@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <script src="jQuery 3.7.1.js"></script>
     <script src="index.js"></script>
@@ -20,15 +24,10 @@
     <ul class="navbar">
       <li><a href="/">HOME</a></li>
       <li><div></div></li>
+      <li><a href="#mika">MIKA</a></li>
+      <li><a href="#portfolio">PORTFOLIO</a></li>
       <li><a href="#aboutMe">OVER MIJ</a></li>
-      <li><a href="#game">GAME</a></li>
-      <li><a href="#dummy1">DUMMY 1</a></li>
-      <li><a href="#dummy2">DUMMY 2</a></li>
-      <li><a href="#" id="a">GAME</a></li>
-      <li><a href="#" id="a">GAME</a></li>
-      <li><a href="#" id="a">GAME</a></li>
-      <li><a href="#" id="a">GAME</a></li>
-      <li><a href="#dummy7">DUMMY 7</a></li>
+      <li><a href="#contact">CONTACT</a></li>
     </ul>
 
     <div class="background">
@@ -39,14 +38,15 @@
             <div>
               <div>
                 <div class="aboutMeFlex2">
-                  <h1 id="aboutMe">Mika van de Kuit</h1>
+                  <h1 id="mika">Mika van de Kuit</h1>
                 </div>
 
                 <div class="aboutMeFlex3">
                   <div>
                     <p>
-                      Een gedreven software developer die een beetje van alles
-                      kent. Altijd nieuwsgierig om meer te leren.
+                      Ik ben een gedreven software developer die een beetje van
+                      alles kent. Altijd nieuwsgierig om meer te leren. Grote
+                      interesse in game development.
                     </p>
                   </div>
 
@@ -61,7 +61,7 @@
               </div>
             </div>
 
-            <img src="assets/dummy.jpg" alt="Photo" id="photo" />
+            <img src="assets/dummy.jpg" alt="Foto van Mika" id="photo" />
           </div>
         </div>
         <!---->
@@ -70,13 +70,17 @@
         <div class="textblock">
           <div class="portfolioFlex">
             <div>
-              <h1>Portfolio</h1>
-              <p>over de jaren heen blah blah lorem ipsum solor mit yap yap</p>
+              <h1 id="portfolio">Portfolio</h1>
+              <p>
+                Alle projecten hier zijn ook te vinden op
+                <a href="https://github.com/Ryseaaaa"> GitHub</a>.
+              </p>
             </div>
             <div class="portfolioGrid">
               <div class="portfolioCard">
                 <div>
                   <h1>Snake - Java</h1>
+
                   <p>
                     In mijn eerste jaar op ROCvF ben ik bezig geweest met
                     processing, een graphics library voor Java. Ik heb snake
@@ -91,6 +95,7 @@
               <div class="portfolioCard">
                 <div>
                   <h1>Yahtzee - JavaScript</h1>
+
                   <p>
                     Ik heb op ROCvF ook Yahtzee gemaakt. Ik kreeg de layout van
                     de pagina, en de opdracht was om alle logica achter het spel
@@ -120,8 +125,9 @@
                   <h1>Evenementen Website PHP</h1>
                   <p>
                     Ik heb met HTML, CSS, PHP en SQL een website gemaakt waar je
-                    als admin kan inloggen om evenementen te beheren. Het
-                    gebruikt ook cookies om je gegevens te onthouden.
+                    als admin kan inloggen om evenementen te beheren. De
+                    gegevens worden opgeslagen in een database. Het gebruikt ook
+                    cookies om je gegevens te onthouden.
                   </p>
                 </div>
                 <img src="assets/casuscafe.png" alt="PHP Website" />
@@ -136,18 +142,19 @@
                     deel van het programmeren.
                   </p>
                 </div>
-                <img src="assets/unox.png" alt="Unity Game" />
+                <img src="assets/unox.png" alt="Unity Gamejam Game" />
               </div>
               <div class="portfolioCard">
                 <div>
-                  <h1>Title</h1>
+                  <h1>Unity Turnbased Game</h1>
                   <p>
-                    Information about the game is plentiful and shall be
-                    displayed here, along with development time and other
-                    related aspects about the game. Lorem ipsum dolor mit amet.
+                    Dit is een work-in-progress turnbased game waar ik in mijn
+                    eentje aan werk. Het is complex en de logica is inmiddels
+                    compleet. De UI moet nog aan gewerkt worden. Het is
+                    geïnspireerd door roguelikes als Balatro en Slay the Spire.
                   </p>
                 </div>
-                <img src="assets/dummy.jpg" alt="BROKEN" />
+                <img src="assets/emineminy.png" alt="Unity Turnbased Game" />
               </div>
             </div>
           </div>
@@ -156,7 +163,7 @@
 
         <!-- About Me -->
         <div class="textblock aboutMeLong">
-          <h1>Over Mij</h1>
+          <h1 id="aboutMe">Over Mij</h1>
           <p>
             Mijn naam is Mika van de Kuit en ik ben 20 jaar. Ik volg de
             opleiding software developer MBO niveau 4 op ROC van Flevoland. Ik
@@ -185,14 +192,18 @@
 
         <!-- Contact -->
         <div class="textblock">
-          <h1>Contact</h1>
+          <h1 id="contact">Contact</h1>
           <div class="contact">
-            <a href="mailto:ryseaaaa@gmail.com"> Email </a>
-            <a href="tel:+31618255257">Telefoon</a>
+            <a href="mailto:ryseaaaa@gmail.com" class="contactButton">Email</a>
+            <a href="tel:+31618255257" class="contactButton">Telefoon</a>
+            <a href="https://github.com/Ryseaaaa" class="contactButton"
+              >GitHub</a
+            >
             <button
+              class="contactButton"
               onclick="window.open('https://wa.me/qr/ZZ65G24XHREFD1','blank');"
             >
-              Whatsapp
+              WhatsApp
             </button>
           </div>
         </div>
