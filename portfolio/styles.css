@@ -158,6 +158,10 @@ body::-webkit-scrollbar {
   border-bottom: 2px solid rgba(0, 0, 0, 0.226);
 }
 
+h3 {
+  font-family: roboto;
+}
+
 .unityCardgame {
   display: flex;
   flex-direction: row;
@@ -211,13 +215,22 @@ body::-webkit-scrollbar {
 .aboutMeFlex {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
+
+.aboutMeFlex :first-child {
+  width: 100%;
+}
+
+.aboutMeFlex :first-child h1 {
+  width: calc(100% - 100px);
+}
+
 .aboutMeFlex2 {
   display: flex;
   flex-direction: row;
 }
 .aboutMeFlex2 h1 {
-  width: calc(100% - 100px);
   margin-left: 0;
   margin-right: 0;
   font-size: 48px;
