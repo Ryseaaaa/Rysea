@@ -241,7 +241,7 @@ body::-webkit-scrollbar {
 
 #photo {
   width: 300px;
-  aspect-ratio: 1/1;
+  aspect-ratio: 3/4;
   object-fit: cover;
 }
 /* About Me */
@@ -327,7 +327,7 @@ body::-webkit-scrollbar {
   height: 75px;
   display: block;
   line-height: 75px;
-  margin-top: 40px;
+  margin-top: 20px;
   border: 2px solid black;
   border-radius: 8px;
   cursor: pointer;

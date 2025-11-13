@@ -1,7 +1,5 @@
 var images = new Array();
-images[0] = "assets/dummy2.jpg";
-images[1] = "assets/dummy3.webp";
-images[2] = "assets/dummy4.avif";
+images[0] = "assets/mika.png";
 var x = 0;
 
 function changeImage() {
