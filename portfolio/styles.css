@@ -159,6 +159,10 @@ body::-webkit-scrollbar {
 }
 
 h3 {
+  width: fit-content;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   font-family: roboto;
 }
 
@@ -331,7 +335,8 @@ h3 {
   display: flex;
   flex-direction: row;
 }
-.contact > * {
+
+.contactButton {
   margin: auto;
   background-color: rgba(33, 34, 37, 0.792);
   color: rgb(206, 219, 234);
@@ -339,7 +344,7 @@ h3 {
   width: 150px;
   height: 75px;
   display: block;
-  line-height: 75px;
+
   margin-top: 20px;
   border: 2px solid black;
   border-radius: 8px;
@@ -348,13 +353,23 @@ h3 {
   text-decoration: unset;
   font-family: Roboto;
   font-size: 20px;
+
+  transition: 0.5s ease-out;
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.525);
+}
+.contact p {
+  color: rgb(206, 219, 234);
+}
+.contact a :first-child {
+  margin-top: 10px;
+}
+.smalltext {
+  font-size: 13px;
 }
 
-.contactButton {
-  transition: 0.2s ease-in-out;
-}
 .contactButton:hover {
-  transform: scale(1.03);
+  transform: scale(1.3);
+  box-shadow: -4px 6px 6px rgba(0, 0, 0, 0.242);
 }
 /*  */
 
